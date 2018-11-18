@@ -1,11 +1,25 @@
 # TextMap
 TexMap is a data interface easy to write and easy to use in the code to access to any data.
 The mecanisim is very easy to understand there is a key and data, but the key is data as well.
+```
+Members
+{
+	John
+	{
+		DOB{ 11 November 1991 }
+	}
+	Peter
+	{
+		DOB{ 1 July 1961 }
+	}
+}
+```
 
 To create the TextMap, you only need to create a instance with the text string of the data.
- 
+```
 	String data="Members{  John  {    DOB{ 11 November 1991 }  }  Peter  {    DOB{ 1 July 1961 }  }}";
 	TextMap tmMesh(data);
+```	
 
 To access to any data of the hierarchy you can do it with three differnt methods
 * method 1  
@@ -27,9 +41,11 @@ Then you can access to each elemt of peter_dob by index with three methods as we
   TextMap year=peter_dob / 2;  
   
  * Finally you can convert this data to: string, int, float, bool  
+```
   int day=peter_dob / 0;  
   string month=peter_dob / 1;  
-  float year=peter_dob / 2;  
+  float year=peter_dob / 2; 
+```  
     
 * Or you can do this   
   int day=(peter_dob / 0).As(0);  
