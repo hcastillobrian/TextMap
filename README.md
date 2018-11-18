@@ -2,31 +2,17 @@
 TexMap is a data interface easy to write and easy to use in the code to access to any data.
 The mecanisim is very easy to understand there is a key and data, but the key is data as well.
 
-For example:
-
-Members  
-{  
-	* John    
-	{    
-		DOB{ 11 November 1991 }      
-  }    
-  Peter    
-  {    
-    DOB{ 1 July 1961 }     
-  }    
-}  
-
 To create the TextMap, you only need to create a instance with the text string of the data.
  
 	String data="Members{  John  {    DOB{ 11 November 1991 }  }  Peter  {    DOB{ 1 July 1961 }  }}";
 	TextMap tmMesh(data);
 
 To access to any data of the hierarchy you can do it with three differnt methods
-* method 1
+* method 1  
 	TextMap members=data.Get("Members");
-* method 2
+* method 2  
 	TextMap members=data["Members"];
-* method 3
+* method 3  
 	TextMap members=data / "Members";
  
 For example if you want to read the DOB of peter you can do this  
