@@ -30,7 +30,9 @@ To access to any data of the hierarchy you can do it with three differnt methods
 	TextMap members=data / "Members";
  
 For example if you want to read the DOB of peter you can do this  
+```
   TextMap peter_dob=data / "Members" / "Peter" / "DOB"
+```
   
 Then you can access to each elemt of peter_dob by index with three methods as well
 * method 1  
