@@ -6,9 +6,9 @@ For example:
 
 Members  
 {  
-  John    
-  {    
-     DOB{ 11 November 1991 }      
+	* John    
+	{    
+		DOB{ 11 November 1991 }      
   }    
   Peter    
   {    
@@ -23,13 +23,10 @@ To create the TextMap, you only need to create a instance with the text string o
 
 To access to any data of the hierarchy you can do it with three differnt methods
 * method 1
-
 	TextMap members=data.Get("Members");
 * method 2
-	
 	TextMap members=data["Members"];
 * method 3
-
 	TextMap members=data / "Members";
  
 For example if you want to read the DOB of peter you can do this  
