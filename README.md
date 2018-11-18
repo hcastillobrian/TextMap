@@ -19,11 +19,11 @@ For example if you want to read the DOB of peter you can do this
   TextMap peter_dob=data / "Members" / "Peter" / "DOB"
   
 Then you can access to each elemt of peter_dob by index with three methods as well
-method 1 
+* method 1 
   TextMap day=peter_dob.Get(0);
-method 2
+* method 2
   TextMap month=peter_dob[1];
-method 3
+* method 3
   TextMap year=peter_dob / 2;  
   
  Finally you can convert this data to: string, int, float, bool  
