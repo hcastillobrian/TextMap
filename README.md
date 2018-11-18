@@ -7,7 +7,7 @@ Members
     John
     {
         DOB{ 11 November 1991 }
-	}
+    }
     Peter
     {
         DOB{ 1 July 1961 }
@@ -44,35 +44,36 @@ Then you can access to each elemt of peter_dob by index with three methods as we
   
 Finally you can convert this data to: string, int, float, bool  
 ```
-  int day=peter_dob / 0;  
-  string month=peter_dob / 1;  
-  float year=peter_dob / 2; 
+    int day=peter_dob / 0;  
+    string month=peter_dob / 1;  
+    float year=peter_dob / 2; 
 ```  
     
 Or you can do this   
 ```
-  int day=(peter_dob / 0).As(0);  
-  string month=(peter_dob / 1).As("");  
-  float year=(peter_dob / 2).As(0.0f);  
+    int day=(peter_dob / 0).As(0);  
+    string month=(peter_dob / 1).As("");  
+    float year=(peter_dob / 2).As(0.0f);  
 ```
   
 Or you can do this   
 ```
-  int day=(int)(peter_dob / 0);  
-  string month=(String)(peter_dob / 1);  
-  float year=(float)(peter_dob / 2);  
+    int day=(int)(peter_dob / 0);  
+    string month=(String)(peter_dob / 1);  
+    float year=(float)(peter_dob / 2);  
 ```
   
 If you want to get how many members there are, you can do this  
 ```
-  int n = data["Members"].Count();  
+    int n = data["Members"].Count();  
 ```
   
 And then you can access by index   
 ```
-  for(int i=0;i<n;i++)  
-  {  
-    TextMap member=data / "Members" / i;  
-    cout << "Member index " << i << " is " (String)member " DOB " << (int)(member/0) << " " << (String)member/1 << " " (int)(member/2);    }  
+    for(int i=0;i<n;i++)  
+    {  
+        TextMap member=data / "Members" / i;  
+        cout << "Member index " << i << " is " (String)member " DOB " << (int)(member/0) << " " << (String)member/1 << " " (int)(member/2);
+    }  
 ```
   
