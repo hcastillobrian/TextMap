@@ -5,29 +5,42 @@ The mecanisim is very easy to understand there is a key and data, but the key is
 For example:
 
 Members
+
 {
+
   John
+  
   {
+  
     DOB{ 11 November 1991 }
+    
   }
+  
   Peter
+  
   {
+  
     DOB{ 1 July 1961 }
+    
   }
+  
 }
 
-to create the TextMap, you only need to create a instance with the text string of the data.
+To create the TextMap, you only need to create a instance with the text string of the data.
  
 	String data="Members{  John  {    DOB{ 11 November 1991 }  }  Peter  {    DOB{ 1 July 1961 }  }}";
 	TextMap tmMesh(data);
 
-to access to any data of the hierarchy you can do it with three differnt methods
-method 1 
-  TextMap members=data.Get("Members");
-method 2
-  TextMap members=data["Members"];
-method 3
-  TextMap members=data / "Members";
+To access to any data of the hierarchy you can do it with three differnt methods
+* method 1
+
+	TextMap members=data.Get("Members");
+* method 2
+	
+	TextMap members=data["Members"];
+* method 3
+
+	TextMap members=data / "Members";
  
 for example if you want to read the DOB of peter you can do this
   TextMap peter_dob=data / "Members" / "Peter" / "DOB"
