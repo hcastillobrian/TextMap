@@ -4,21 +4,21 @@ The mecanisim is very easy to understand there is a key and data, but the key is
 ```
 Members
 {
-	John
-	{
-		DOB{ 11 November 1991 }
+    John
+    {
+        DOB{ 11 November 1991 }
 	}
-	Peter
-	{
-		DOB{ 1 July 1961 }
-	}
+    Peter
+    {
+        DOB{ 1 July 1961 }
+    }
 }
 ```
 
 To create the TextMap, you only need to create a instance with the text string of the data.
 ```
-	String data="Members{  John  {    DOB{ 11 November 1991 }  }  Peter  {    DOB{ 1 July 1961 }  }}";
-	TextMap tmMesh(data);
+    String data="Members{  John  {    DOB{ 11 November 1991 }  }  Peter  {    DOB{ 1 July 1961 }  }}";
+    TextMap tmMesh(data);
 ```	
 
 To access to any data of the hierarchy you can do it with three differnt methods
@@ -31,7 +31,7 @@ To access to any data of the hierarchy you can do it with three differnt methods
  
 For example if you want to read the DOB of peter you can do this  
 ```
-  TextMap peter_dob=data / "Members" / "Peter" / "DOB"
+    TextMap peter_dob=data / "Members" / "Peter" / "DOB"
 ```
   
 Then you can access to each elemt of peter_dob by index with three methods as well
