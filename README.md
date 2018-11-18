@@ -70,7 +70,7 @@ If you want to get how many members there are, you can do this
   
 And then you can access by index   
 ```
-    for(int i=0;i<n;i++)  
+    for(int i=0; i<n; i++)  
     {  
         TextMap member=data / "Members" / i;  
         cout << "Member index " << i << " is " (String)member " DOB " << (int)(member/0) << " " << (String)member/1 << " " (int)(member/2);
