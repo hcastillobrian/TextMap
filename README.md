@@ -40,30 +40,37 @@ Then you can access to each elemt of peter_dob by index with three methods as we
 * method 3  
   TextMap year=peter_dob / 2;  
   
- * Finally you can convert this data to: string, int, float, bool  
+Finally you can convert this data to: string, int, float, bool  
 ```
   int day=peter_dob / 0;  
   string month=peter_dob / 1;  
   float year=peter_dob / 2; 
 ```  
     
-* Or you can do this   
+Or you can do this   
+```
   int day=(peter_dob / 0).As(0);  
   string month=(peter_dob / 1).As("");  
   float year=(peter_dob / 2).As(0.0f);  
+```
   
-* Or you can do this   
+Or you can do this   
+```
   int day=(int)(peter_dob / 0);  
   string month=(String)(peter_dob / 1);  
   float year=(float)(peter_dob / 2);  
+```
   
-  
-* If you want to get how many members there are, you can do this  
+If you want to get how many members there are, you can do this  
+```
   int n = data["Members"].Count();  
+```
   
-* And then you can access by index   
+And then you can access by index   
+```
   for(int i=0;i<n;i++)  
   {  
     TextMap member=data / "Members" / i;  
     cout << "Member index " << i << " is " (String)member " DOB " << (int)(member/0) << " " << (String)member/1 << " " (int)(member/2);    }  
+```
   
